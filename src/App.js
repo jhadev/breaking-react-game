@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GameCard from "./components/GameCard";
+import GameModal from "./components/GameModal";
 import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Row from "./components/Row";
@@ -36,6 +37,13 @@ class App extends Component {
       modal: !this.state.modal
     });
   };
+
+  /*toggleGameModal = () => {
+    this.setState({
+      gameModal: !this.state.gameModal
+    });
+  }*/
+
   //method to check picks, takes in id.
 
   handlePicked = id => {
@@ -95,7 +103,9 @@ class App extends Component {
 
     //and if the currentScore is equal to the length of the choices array alert the user they have won.
     else if (currentScore === 10) {
-      alert("You Win");
+      //this.toggleGameModal();
+      this.toggle()
+      this.handleReset()
     }
 
     //run the randomize method
@@ -108,9 +118,7 @@ class App extends Component {
       <Wrapper>
         <Nav score={this.state.score} highScore={this.state.highScore} />
         <div className="content">
-          <h4>
-            A simple memory game. Don't pick the same character twice...
-          </h4>
+          <h4>A simple memory game. Don't pick the same character twice...</h4>
           <Row key={1}>
             {this.state.choices.map(choice => (
               <Col size="md-3 col-12">
@@ -134,10 +142,10 @@ class App extends Component {
             className={this.props.className}
           >
             <ModalHeader className="modalHeader" toggle={this.toggle}>
-              GAME OVER
+            {this.state.score === 10 ? "CONGRATULATIONS" : "GOOD TRY"}
             </ModalHeader>
             <ModalBody className="modalBody">
-              Your short term memory is going. Please try again.
+            {this.state.score === 10 ? "You Win. Your memory is awesome." : "Sorry you should have eaten breakfast this morning. Try again."}
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.toggle}>

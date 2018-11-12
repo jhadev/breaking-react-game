@@ -1,38 +1,22 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-class GameModal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
-
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
-  }
-
-  render() {
+const GameModal = props => {
     return (
       <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}MODAL</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>GAME OVER</ModalHeader>
+        <Button color="danger" onClick={this.toggleGameModal}>{this.props.buttonLabel}MODAL</Button>
+        <Modal isOpen={this.state.gameModal} toggle={this.toggleGameModal} className={this.props.className}>
+          <ModalHeader toggle={this.toggleGameModal}>Your Score: {props.score}</ModalHeader>
           <ModalBody>
-          Your short term memory is going. Please try again.
+          You Win!
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={this.toggle}>Close</Button>
+            <Button color="secondary" onClick={this.toggleGameModal}>Close</Button>
           </ModalFooter>
         </Modal>
       </div>
     );
   }
-}
+
 
 export default GameModal;
