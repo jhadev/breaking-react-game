@@ -1,0 +1,29 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modalBody {
+  font-size: 20px;
+}
+
+.modalHeader {
+  text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+  margin: 20px;
+}
+
+.content {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  align-content: center;
+}
