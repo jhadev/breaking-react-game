@@ -104,7 +104,7 @@ class App extends Component {
     //and if the currentScore is equal to the length of the choices array alert the user they have won.
     if (currentScore === 10) {
       //this.toggleGameModal();
-      this.toggle()
+      this.toggle();
     }
 
     //run the randomize method
@@ -118,7 +118,7 @@ class App extends Component {
         <Nav score={this.state.score} highScore={this.state.highScore} />
         <div className="content">
           <h4>A simple memory game. Don't pick the same character twice...</h4>
-          <Row key={1}>
+          <Row>
             {this.state.choices.map(choice => (
               <Col size="md-3 col-12">
                 <GameCard
@@ -141,10 +141,12 @@ class App extends Component {
             className={this.props.className}
           >
             <ModalHeader className="modalHeader" toggle={this.toggle}>
-            {this.state.score >= 9 ? "CONGRATULATIONS" : "GOOD TRY"}
+              {this.state.score >= 9 ? "CONGRATULATIONS" : "GOOD TRY"}
             </ModalHeader>
             <ModalBody className="modalBody">
-            {this.state.score >= 9 ? "You Win. Your memory is awesome." : "Sorry you should have eaten breakfast this morning. Try again."}
+              {this.state.score >= 9
+                ? "You Win. Your memory is awesome."
+                : "Sorry you should have eaten breakfast this morning. Try again."}
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.toggle}>
