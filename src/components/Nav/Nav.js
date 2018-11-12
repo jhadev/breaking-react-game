@@ -3,7 +3,7 @@ import "./Nav.css";
 
 const Nav = props => (
 
-    <ul className="nav shadow background text-light d-flex bd-highlight mb-3">
+    <ul className="nav shadow background text-light d-flex bd-highlight">
       <li className="mr-auto p-2 bd-highlight nav-item title">
       Breaking Bad Memory Game
       </li>

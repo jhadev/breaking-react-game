@@ -5,6 +5,7 @@ import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Row from "./components/Row";
 import Col from "./components/Col";
+import Heading from "./components/Heading";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import choices from "./choices.json";
 import "./App.css";
@@ -116,11 +117,11 @@ class App extends Component {
     return (
       <Wrapper>
         <Nav score={this.state.score} highScore={this.state.highScore} />
+        <Heading />
         <div className="content">
-          <h4>A simple memory game. Don't pick the same character twice...</h4>
           <Row>
             {this.state.choices.map(choice => (
-              <Col size="md-3 col-12">
+              <Col size="md-2 sm-6">
                 <GameCard
                   key={choice.id}
                   id={choice.id}
