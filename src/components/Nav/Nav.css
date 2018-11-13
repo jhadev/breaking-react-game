@@ -20,4 +20,6 @@ li {
 
 .background {
   background-color: #026635;
+  box-shadow: 0 4px 8px rgb(180, 180, 180), 0 4px 8px rgb(180, 180, 180);
+  margin-bottom: 12px;
 }
