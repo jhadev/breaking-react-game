@@ -1,15 +1,15 @@
 {
-  "main.css": "/clicky-game/static/css/main.be5244b6.chunk.css",
-  "main.js": "/clicky-game/static/js/main.89b8f571.chunk.js",
-  "main.js.map": "/clicky-game/static/js/main.89b8f571.chunk.js.map",
-  "static/css/1.9cd52da5.chunk.css": "/clicky-game/static/css/1.9cd52da5.chunk.css",
-  "static/js/1.5571f7eb.chunk.js": "/clicky-game/static/js/1.5571f7eb.chunk.js",
-  "static/js/1.5571f7eb.chunk.js.map": "/clicky-game/static/js/1.5571f7eb.chunk.js.map",
-  "runtime~main.js": "/clicky-game/static/js/runtime~main.6acb6692.js",
-  "runtime~main.js.map": "/clicky-game/static/js/runtime~main.6acb6692.js.map",
-  "static/css/1.9cd52da5.chunk.css.map": "/clicky-game/static/css/1.9cd52da5.chunk.css.map",
-  "static/css/main.be5244b6.chunk.css.map": "/clicky-game/static/css/main.be5244b6.chunk.css.map",
-  "index.html": "/clicky-game/index.html",
-  "precache-manifest.a7f3b0606c832979661373c2f8f2969f.js": "/clicky-game/precache-manifest.a7f3b0606c832979661373c2f8f2969f.js",
-  "service-worker.js": "/clicky-game/service-worker.js"
+  "main.css": "/breaking-react-game/static/css/main.be5244b6.chunk.css",
+  "main.js": "/breaking-react-game/static/js/main.89b8f571.chunk.js",
+  "main.js.map": "/breaking-react-game/static/js/main.89b8f571.chunk.js.map",
+  "static/css/1.9cd52da5.chunk.css": "/breaking-react-game/static/css/1.9cd52da5.chunk.css",
+  "static/js/1.5571f7eb.chunk.js": "/breaking-react-game/static/js/1.5571f7eb.chunk.js",
+  "static/js/1.5571f7eb.chunk.js.map": "/breaking-react-game/static/js/1.5571f7eb.chunk.js.map",
+  "runtime~main.js": "/breaking-react-game/static/js/runtime~main.0454444b.js",
+  "runtime~main.js.map": "/breaking-react-game/static/js/runtime~main.0454444b.js.map",
+  "static/css/1.9cd52da5.chunk.css.map": "/breaking-react-game/static/css/1.9cd52da5.chunk.css.map",
+  "static/css/main.be5244b6.chunk.css.map": "/breaking-react-game/static/css/main.be5244b6.chunk.css.map",
+  "index.html": "/breaking-react-game/index.html",
+  "precache-manifest.7f80fbd5464fa494d8b294b037854b9d.js": "/breaking-react-game/precache-manifest.7f80fbd5464fa494d8b294b037854b9d.js",
+  "service-worker.js": "/breaking-react-game/service-worker.js"
 }
