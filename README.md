@@ -1,8 +1,8 @@
-# clicky-game
+# Breaking Bad React Memory Game
 
-credit to Haydn Simons for the awesome Breaking Bad watercolors
+credit to Haydn Symons for the awesome Breaking Bad watercolors
 [View Here](http://www.haydnsymons.com/work/breaking-bad-portraits)
-
+----
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
