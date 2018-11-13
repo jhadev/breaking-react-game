@@ -122,7 +122,7 @@ class App extends Component {
         <div className="content">
           <Row>
             {this.state.choices.map(choice => (
-              <Col size="md-2 sm-6">
+              <Col>
                 <GameCard
                   key={choice.id}
                   id={choice.id}
