@@ -9,6 +9,7 @@ import Heading from "./components/Heading";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import choices from "./choices.json";
 import "./App.css";
+import { bold } from "ansi-colors";
 
 //Durstenfield shuffle
 
@@ -143,12 +144,12 @@ class App extends Component {
             className={this.props.className}
           >
             <ModalHeader className="modalHeader" toggle={this.toggle}>
-              {this.state.score === 10 ? "CONGRATULATIONS" : "NOT THIS TIME"}
+              {this.state.score === 10 ? "CONGRATULATIONS!" : "NOT THIS TIME."}
             </ModalHeader>
             <ModalBody className="modalBody">
               {this.state.score === 10
-                ? "You won. You are the danger."
-                : "Better Call Saul. Try again."}
+                ? <p>You won. You are the danger</p>
+                : <p>Better Call Saul and try again.</p>}
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.toggle}>
