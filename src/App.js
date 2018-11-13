@@ -9,7 +9,6 @@ import Heading from "./components/Heading";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import choices from "./choices.json";
 import "./App.css";
-import { bold } from "ansi-colors";
 
 //Durstenfield shuffle
 
@@ -123,7 +122,7 @@ class App extends Component {
         <div className="content">
           <Row>
             {this.state.choices.map(choice => (
-              <Col>
+              <Col key={choice.id}>
                 <GameCard
                   key={choice.id}
                   id={choice.id}
@@ -138,7 +137,7 @@ class App extends Component {
           </Row>
         </div>
         <div>
-          <Modal
+         <Modal
             isOpen={this.state.modal}
             toggle={this.toggle}
             className={this.props.className}
@@ -156,7 +155,7 @@ class App extends Component {
                 Close
               </Button>
               <Button color="success" onClick=
-              {this.handleReset}>
+              {this.handleReset} >
                 Play Again
               </Button>
             </ModalFooter>
