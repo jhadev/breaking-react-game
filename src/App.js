@@ -74,6 +74,7 @@ class App extends Component {
       highScore: this.state.highScore,
       picked: []
     });
+    this.toggle()
     this.handleRandomize();
   };
 
@@ -142,18 +143,19 @@ class App extends Component {
             className={this.props.className}
           >
             <ModalHeader className="modalHeader" toggle={this.toggle}>
-              {this.state.score >= 9 ? "CONGRATULATIONS" : "GOOD TRY"}
+              {this.state.score === 10 ? "CONGRATULATIONS" : "NOT THIS TIME"}
             </ModalHeader>
             <ModalBody className="modalBody">
-              {this.state.score >= 9
-                ? "You Win. Your memory is awesome."
-                : "Sorry you should have eaten breakfast this morning. Try again."}
+              {this.state.score === 10
+                ? "You won. You are the danger."
+                : "Better Call Saul. Try again."}
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.toggle}>
                 Close
               </Button>
-              <Button color="success" onClick={this.handleReset}>
+              <Button color="success" onClick=
+              {this.handleReset}>
                 Play Again
               </Button>
             </ModalFooter>
