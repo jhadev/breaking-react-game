@@ -38,4 +38,8 @@
     align-content: center;
     text-align: center;
   }
+
+  .card > .img-container > img {
+    padding: 0px;
+  }
 }
