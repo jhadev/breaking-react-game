@@ -24,3 +24,10 @@ li {
   box-shadow: 0 4px 8px rgb(180, 180, 180), 0 4px 8px rgb(180, 180, 180);
   margin-bottom: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+  .score, .high-score {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
