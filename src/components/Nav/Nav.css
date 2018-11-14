@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   font-size: 16px;
-  padding: 20px;
+  padding: 10px;
 }
 
 li {
@@ -14,7 +14,7 @@ li {
 .title, .score, .high-score {
   font-weight: bold;
   text-align: center;
-  font-family: 'Philosopher', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 24px;
 }
 
