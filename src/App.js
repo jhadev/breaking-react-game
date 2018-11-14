@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import GameCard from "./components/GameCard";
 import GameModal from "./components/GameModal";
-import Container from "./components/Container";
 import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Row from "./components/Row";
@@ -29,7 +28,7 @@ class App extends Component {
     score: 0,
     highScore: 0,
     picked: [],
-    modal: false
+    modal: false,
   };
 
   //modal toggle method for reactstrap
@@ -61,7 +60,7 @@ class App extends Component {
       console.log(this.state);
     } else {
       console.log(this.state);
-      this.handleReset();
+      this.toggle()
     }
   };
 
@@ -114,6 +113,34 @@ class App extends Component {
     this.handleRandomize();
   };
 
+modalMessages = () => {
+  const finalScore = this.state.score
+  switch(finalScore) {
+    case 1:
+      return <p>You should watch Breaking Bad.</p>;
+    case 2:
+      return <p>"You are not the guy. You’re not capable of being the guy. I had a guy, but now I don’t. You are not the guy.” - Mike Ehrmantraut</p>;
+    case 3:
+      return <p>"Darth Vader had responsibilities. He was responsible for the Death Star." - Badger</p>;
+    case 4:
+      return <p>"I'm a blowfish, yo!" - Jesse Pinkman</p>;
+    case 5:
+      return <p>"They’re minerals, Marie! Jesus!"" - Hank Schrader</p>
+    case 6:
+      return <p>"You know I, I just think, that things have a way of working themselves out" - Walter White</p>
+    case 7:
+      return <p>"Scientists love lasers." - Saul Goodman</p>
+    case 8:
+      return <p>"Name one thing in this world that is not negotiable" - Walter White</p>
+    case 9:
+      return <p>"I am the one who knocks." - Walter White</p>
+    case 10:
+      return <p>"I am not the danger. I am the danger" - Walter White</p>
+    default:
+      return <p>hello</p>;
+  }
+}
+
   render() {
     return (
       <Wrapper>
@@ -141,17 +168,16 @@ class App extends Component {
             isOpen={this.state.modal}
             toggle={this.toggle}
             className={this.props.className}
+            backdrop={'static'}
           >
             <ModalHeader className="modalHeader" toggle={this.toggle}>
-              {this.state.score === 10 ? "CONGRATULATIONS!" : "NOT THIS TIME."}
+              {this.state.score === 10 ? "CONGRATULATIONS!" : "GOOD TRY"}
             </ModalHeader>
             <ModalBody className="modalBody">
-              {this.state.score === 10
-                ? <p>You won. You are the danger</p>
-                : <p>Better Call Saul and try again.</p>}
+            {this.modalMessages()}
             </ModalBody>
             <ModalFooter>
-              <Button color="secondary" onClick={this.toggle}>
+              <Button color="secondary" onClick={this.handleReset}>
                 Close
               </Button>
               <Button color="success" onClick=
