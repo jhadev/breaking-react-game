@@ -28,3 +28,14 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .card {
+    height: 80px;
+    margin: 4px;
+    position: relative;
+    width: 80px;
+    align-content: center;
+    text-align: center;
+  }
+}

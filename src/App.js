@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import GameCard from "./components/GameCard";
 import GameModal from "./components/GameModal";
+import Container from "./components/Container";
 import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Row from "./components/Row";
@@ -60,7 +61,6 @@ class App extends Component {
       console.log(this.state);
     } else {
       console.log(this.state);
-      this.toggle();
       this.handleReset();
     }
   };
