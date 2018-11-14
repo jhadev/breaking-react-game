@@ -171,7 +171,7 @@ modalMessages = () => {
             backdrop={'static'}
             centered={true}
           >
-            <ModalHeader className="modalHeader" toggle={this.toggle}>
+            <ModalHeader className="modalHeader" toggle={this.handleReset}>
               {this.state.score === 10 ? "CONGRATULATIONS!" : "GOOD TRY"}
             </ModalHeader>
             <ModalBody className="modalBody">
