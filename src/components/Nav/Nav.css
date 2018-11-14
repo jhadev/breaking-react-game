@@ -14,7 +14,8 @@ li {
 .title, .score, .high-score {
   font-weight: bold;
   text-align: center;
-  font-family: 'Lora', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 2px;
   font-size: 24px;
 }
 

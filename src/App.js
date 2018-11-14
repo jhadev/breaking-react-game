@@ -117,7 +117,7 @@ modalMessages = () => {
   const finalScore = this.state.score
   switch(finalScore) {
     case 1:
-      return <p>You should watch Breaking Bad.</p>;
+      return <p>Keep playing. There's a different quote for every possible score</p>;
     case 2:
       return <p>"You are not the guy. You’re not capable of being the guy. I had a guy, but now I don’t. You are not the guy.” - Mike Ehrmantraut</p>;
     case 3:
@@ -135,7 +135,7 @@ modalMessages = () => {
     case 9:
       return <p>"I am the one who knocks." - Walter White</p>
     case 10:
-      return <p>"I am not the danger. I am the danger" - Walter White</p>
+      return <p>YOU WIN! "I am not the danger. I am the danger" - Walter White</p>
     default:
       return <p>hello</p>;
   }
@@ -172,7 +172,7 @@ modalMessages = () => {
             centered={true}
           >
             <ModalHeader className="modalHeader" toggle={this.handleReset}>
-              {this.state.score === 10 ? "CONGRATULATIONS!" : "GOOD TRY"}
+              {this.state.score === 10 ? <p>CONGRATULATIONS!</p> : <p>Good try. Your score: {this.state.score}</p>}
             </ModalHeader>
             <ModalBody className="modalBody">
             {this.modalMessages()}
