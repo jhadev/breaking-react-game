@@ -117,7 +117,7 @@ modalMessages = () => {
   const finalScore = this.state.score
   switch(finalScore) {
     case 1:
-      return <p>Keep playing. There's a different quote for every possible score</p>;
+      return <p>Keep playing. There's a different quote for every possible score.</p>;
     case 2:
       return <p>"You are not the guy. You’re not capable of being the guy. I had a guy, but now I don’t. You are not the guy.” - Mike Ehrmantraut</p>;
     case 3:
@@ -125,7 +125,7 @@ modalMessages = () => {
     case 4:
       return <p>"I'm a blowfish, yo!" - Jesse Pinkman</p>;
     case 5:
-      return <p>"They’re minerals, Marie! Jesus!"" - Hank Schrader</p>
+      return <p>"They’re minerals, Marie! Jesus!" - Hank Schrader</p>
     case 6:
       return <p>"You know I, I just think, that things have a way of working themselves out" - Walter White</p>
     case 7:
