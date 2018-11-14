@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/breaking-react-game/static/js/runtime~main.0454444b.js"
   },
   {
-    "revision": "2276c9cf85c98f02d6ca",
-    "url": "/breaking-react-game/static/js/main.2276c9cf.chunk.js"
+    "revision": "22ea79a2eb1c6c56b401",
+    "url": "/breaking-react-game/static/js/main.22ea79a2.chunk.js"
   },
   {
     "revision": "32191ded8d8613516136",
     "url": "/breaking-react-game/static/js/1.32191ded.chunk.js"
   },
   {
-    "revision": "2276c9cf85c98f02d6ca",
-    "url": "/breaking-react-game/static/css/main.f022726a.chunk.css"
+    "revision": "22ea79a2eb1c6c56b401",
+    "url": "/breaking-react-game/static/css/main.04611e82.chunk.css"
   },
   {
     "revision": "32191ded8d8613516136",
     "url": "/breaking-react-game/static/css/1.6a2c53e9.chunk.css"
   },
   {
-    "revision": "a5bad46c47550db5da18780ed9debafa",
+    "revision": "49f92b76488dcb2cf16deade7bed2aaa",
     "url": "/breaking-react-game/index.html"
   }
 ];
