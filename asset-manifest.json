@@ -1,15 +1,15 @@
 {
   "main.css": "/breaking-react-game/static/css/main.bfec5321.chunk.css",
-  "main.js": "/breaking-react-game/static/js/main.7ace827f.chunk.js",
-  "main.js.map": "/breaking-react-game/static/js/main.7ace827f.chunk.js.map",
+  "main.js": "/breaking-react-game/static/js/main.5c77a64e.chunk.js",
+  "main.js.map": "/breaking-react-game/static/js/main.5c77a64e.chunk.js.map",
   "static/css/1.6a2c53e9.chunk.css": "/breaking-react-game/static/css/1.6a2c53e9.chunk.css",
   "static/js/1.32191ded.chunk.js": "/breaking-react-game/static/js/1.32191ded.chunk.js",
   "static/js/1.32191ded.chunk.js.map": "/breaking-react-game/static/js/1.32191ded.chunk.js.map",
   "runtime~main.js": "/breaking-react-game/static/js/runtime~main.0454444b.js",
   "runtime~main.js.map": "/breaking-react-game/static/js/runtime~main.0454444b.js.map",
-  "static/css/1.6a2c53e9.chunk.css.map": "/breaking-react-game/static/css/1.6a2c53e9.chunk.css.map",
   "static/css/main.bfec5321.chunk.css.map": "/breaking-react-game/static/css/main.bfec5321.chunk.css.map",
+  "static/css/1.6a2c53e9.chunk.css.map": "/breaking-react-game/static/css/1.6a2c53e9.chunk.css.map",
   "index.html": "/breaking-react-game/index.html",
-  "precache-manifest.8f7218a489daf62b628a242da563d74c.js": "/breaking-react-game/precache-manifest.8f7218a489daf62b628a242da563d74c.js",
+  "precache-manifest.db66824087c1f6e4f23546c6b348e01d.js": "/breaking-react-game/precache-manifest.db66824087c1f6e4f23546c6b348e01d.js",
   "service-worker.js": "/breaking-react-game/service-worker.js"
 }

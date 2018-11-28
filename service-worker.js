@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/breaking-react-game/precache-manifest.8f7218a489daf62b628a242da563d74c.js"
+  "/breaking-react-game/precache-manifest.db66824087c1f6e4f23546c6b348e01d.js"
 );
 
 workbox.clientsClaim();
