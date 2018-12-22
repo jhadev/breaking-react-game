@@ -8,6 +8,11 @@
 
 credit to Haydn Symons for the awesome Breaking Bad watercolors
 
+![image1](https://user-images.githubusercontent.com/42519030/50379067-9de64980-060c-11e9-800d-7aa5e433331e.PNG)
+
+![image2](https://user-images.githubusercontent.com/42519030/50379068-a2126700-060c-11e9-8550-ae457fa00bfc.PNG)
+
+
 ----
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
