@@ -4,6 +4,11 @@
 
 [View Source Here](https://github.com/jhadev/breaking-react-game/tree/code)
 
+#### Technologies used
+* React
+* Bootstrap
+* Reactstrap
+
 [View Watercolors Here](http://www.haydnsymons.com/work/breaking-bad-portraits)
 
 credit to Haydn Symons for the awesome Breaking Bad watercolors
