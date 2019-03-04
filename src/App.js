@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import GameCard from "./components/GameCard";
-import GameModal from "./components/GameModal";
-import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Row from "./components/Row";
 import Col from "./components/Col";
@@ -28,7 +26,7 @@ class App extends Component {
     score: 0,
     highScore: 0,
     picked: [],
-    modal: false,
+    modal: false
   };
 
   //modal toggle method for reactstrap
@@ -60,7 +58,7 @@ class App extends Component {
       console.log(this.state);
     } else {
       console.log(this.state);
-      this.toggle()
+      this.toggle();
     }
   };
 
@@ -73,7 +71,7 @@ class App extends Component {
       highScore: this.state.highScore,
       picked: []
     });
-    this.toggle()
+    this.toggle();
     this.handleRandomize();
   };
 
@@ -113,82 +111,110 @@ class App extends Component {
     this.handleRandomize();
   };
 
-modalMessages = () => {
-  const finalScore = this.state.score
-  switch(finalScore) {
-    case 1:
-      return <p>Keep playing. There's a different quote for every possible score.</p>;
-    case 2:
-      return <p>"You are not the guy. You’re not capable of being the guy. I had a guy, but now I don’t. You are not the guy.” - Mike Ehrmantraut</p>;
-    case 3:
-      return <p>"Darth Vader had responsibilities. He was responsible for the Death Star." - Badger</p>;
-    case 4:
-      return <p>"I'm a blowfish, yo!" - Jesse Pinkman</p>;
-    case 5:
-      return <p>"They’re minerals, Marie! Jesus!" - Hank Schrader</p>
-    case 6:
-      return <p>"You know I, I just think, that things have a way of working themselves out" - Walter White</p>
-    case 7:
-      return <p>"Scientists love lasers." - Saul Goodman</p>
-    case 8:
-      return <p>"Name one thing in this world that is not negotiable" - Walter White</p>
-    case 9:
-      return <p>"I am the one who knocks." - Walter White</p>
-    case 10:
-      return <p>YOU WIN! "I am not the danger. I am the danger" - Walter White</p>
-    default:
-      return <p>hello</p>;
-  }
-}
+  modalMessages = () => {
+    const finalScore = this.state.score;
+    switch (finalScore) {
+      case 1:
+        return (
+          <p>
+            Keep playing. There's a different quote for every possible score.
+          </p>
+        );
+      case 2:
+        return (
+          <p>
+            "You are not the guy. You’re not capable of being the guy. I had a
+            guy, but now I don’t. You are not the guy.” - Mike Ehrmantraut
+          </p>
+        );
+      case 3:
+        return (
+          <p>
+            "Darth Vader had responsibilities. He was responsible for the Death
+            Star." - Badger
+          </p>
+        );
+      case 4:
+        return <p>"I'm a blowfish, yo!" - Jesse Pinkman</p>;
+      case 5:
+        return <p>"They’re minerals, Marie! Jesus!" - Hank Schrader</p>;
+      case 6:
+        return (
+          <p>
+            "You know I, I just think, that things have a way of working
+            themselves out" - Walter White
+          </p>
+        );
+      case 7:
+        return <p>"Scientists love lasers." - Saul Goodman</p>;
+      case 8:
+        return (
+          <p>
+            "Name one thing in this world that is not negotiable" - Walter White
+          </p>
+        );
+      case 9:
+        return <p>"I am the one who knocks." - Walter White</p>;
+      case 10:
+        return (
+          <p>YOU WIN! "I am not the danger. I am the danger" - Walter White</p>
+        );
+      default:
+        return <p>hello</p>;
+    }
+  };
 
   render() {
     return (
-      <Wrapper>
+      <React.Fragment>
         <Nav score={this.state.score} highScore={this.state.highScore} />
         <Heading />
-        <div className="content">
-          <Row>
-            {this.state.choices.map(choice => (
-              <Col key={choice.id}>
-                <GameCard
-                  key={choice.id}
-                  id={choice.id}
-                  image={choice.image}
-                  handlePicked={this.handlePicked}
-                  handleIncrement={this.handleIncrement}
-                  handleReset={this.handleReset}
-                  handleRandomize={this.handleRandomize}
-                />
-              </Col>
-            ))}
-          </Row>
+        <div className="container">
+          <div className="content">
+            <Row>
+              {this.state.choices.map(choice => (
+                <Col key={choice.id}>
+                  <GameCard
+                    key={choice.id}
+                    id={choice.id}
+                    image={choice.image}
+                    handlePicked={this.handlePicked}
+                    handleIncrement={this.handleIncrement}
+                    handleReset={this.handleReset}
+                    handleRandomize={this.handleRandomize}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div>
         </div>
         <div>
-         <Modal
+          <Modal
             isOpen={this.state.modal}
             toggle={this.toggle}
             className={this.props.className}
-            backdrop={'static'}
+            backdrop={"static"}
             centered={true}
           >
             <ModalHeader className="modalHeader" toggle={this.handleReset}>
-              {this.state.score === 10 ? <p>CONGRATULATIONS!</p> : <p>Good try. Your score: {this.state.score}</p>}
+              {this.state.score === 10 ? (
+                <p>CONGRATULATIONS!</p>
+              ) : (
+                <p>Good try. Your score: {this.state.score}</p>
+              )}
             </ModalHeader>
-            <ModalBody className="modalBody">
-            {this.modalMessages()}
-            </ModalBody>
+            <ModalBody className="modalBody">{this.modalMessages()}</ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.handleReset}>
                 Close
               </Button>
-              <Button color="success" onClick=
-              {this.handleReset} >
+              <Button color="success" onClick={this.handleReset}>
                 Play Again
               </Button>
             </ModalFooter>
           </Modal>
         </div>
-      </Wrapper>
+      </React.Fragment>
     );
   }
 }
